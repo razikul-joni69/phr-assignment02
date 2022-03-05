@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+/*-------------------------
+ Global Styles Start  
+ ---------------------------*/
+h1 {
+    font-size: 60px;
+}
+p {
+    color: gray;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.container {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.btn {
+    background-color: #e02c6d;
+    color: #fff;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+/*-----------------------
+ Global Styles End 
+------------------------*/
+
+/*------------------------
+Navbar Start
+--------------------------  */
+header > nav > ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+header > nav > ul > div {
+    display: flex;
+}
+header > nav > ul > div > li {
+    list-style: none;
+}
+header > nav > ul > div > li > a,
+header > nav > ul > div > a {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 20px;
+}
+/*------------------------
+Navbar End
+--------------------------  */
+
+/* ---------------------------
+Hero Section Start
+------------------------------- */
+#hero-section {
+    background-color: #2d25a0;
+    width: 100%;
+}
+.hero-content {
+    color: white;
+    width: 50%;
+}
+.hero-image {
+    width: 50%;
+}
+.hero-image img {
+    width: 100%;
+    height: 100%;
+        padding: 30px 0;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* ---------------------------
+Hero Section End
+------------------------------- */
+
+/* ------------------------------
+Main Content Section Start
+---------------------------------- */
+#main-content {
+    background-color: rgb(255, 254, 254);
+    padding: 100px 0;
+}
+.card {
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    padding: 10px;
+    -webkit-box-shadow: 0px 0px 10px 0px #000000;
+    box-shadow: 0px 0px 10px 0px #000000;
+    border-radius: 3px;
+}
+.card img {
+    width: 100%;
+    height: 300px;
+}
+.title {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+/* ------------------------------
+Main Content Section End
+---------------------------------- */
+
+/* ----------------------
+Footer Section Start
+ ----------------------- */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.footer-image{
+    width: 350px;
+}
+.social-icons{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 25px;
+}
+.social-icons a{
+    font-size: 30px;
+    text-align: center;
+    color: gray;
+    padding: 10px 15px;
+}
+.copyright{
+    text-align: center;
+}
+ /* ---------------------------
+ Footer Section End 
+ --------------------------- */
+
+/*-----------------------
+ Media Queries Start
+------------------- */
+@media screen and (max-width: 1200px) {
+    .hero-content {
+        width: 100%;
+    }
+    .hero-image {
+        width: 100%;
+    }
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+    }
+    .hero {
+        margin-top: 0px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+    .title {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    .hero-content {
+        width: 100%;
+    }
+    .hero-image {
+        width: 100%;
+    }
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+    }
+    .hero {
+        margin-top: 0px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-image img {
+        padding: 30px 0;
+    }
+    .contents {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+}
+@media screen and (min-width: 968px) {
+    #hero-section {
+        background-color: #2d25a0;
+        height: 800px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px) {
+    header > nav > ul {
+        display: block;
+    }
+    header > nav > ul > div > li > a,
+    header > nav > ul > div > a {
+        color: #fff;
+        padding-right: 10px;
+    }
+    .hero {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .hero-image img {
+        padding: 30px 0;
+    }
+    .contents {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+}
+/*-----------------------
+ Media Queries End
+------------------- */
